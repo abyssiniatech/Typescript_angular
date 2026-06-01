@@ -172,3 +172,14 @@ function printMessage():void{
 }
 printMessage();
 
+
+
+// generics
+function identity<T>(arg:T):T{
+  return arg;
+}
+const output1=identity<string>("Hello, Generics!");
+console.log('====================================');
+console.log(output1);
+
+// intermidate generics
