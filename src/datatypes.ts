@@ -15,6 +15,16 @@ console.log(age);
 console.log("====================================");
 // boolean
 let isStudent:boolean=true;
+if(isStudent){
+  console.log("====================================");
+  console.log("is a student");
+  console.log("====================================");
+}
+else{
+  console.log("====================================");
+  console.log("is not a student");
+  console.log("====================================");
+}
 console.log("====================================boolean");
 console.log(isStudent);
 console.log("====================================");
@@ -129,4 +139,35 @@ if(typeof unknownValue==="string"){
 function throwError(message:string):never{
   throw new Error(message);
 }
-// throwError("This is an error message."); // Uncommenting this line will throw an error
+
+let departmnt:any;
+departmnt="IT";
+departmnt=12;
+console.log('====================================');
+console.log(departmnt);
+console.log('====================================');
+
+// function in typescript
+function add(num1:number,num2:number) :number{
+   return num1+num2;
+}
+const sum =add(12,23)
+console.log('====================================');
+console.log(sum);
+console.log('====================================');
+
+// void function
+function logMessage(message:string):void{
+  console.log('====================================');
+  console.log(message);
+  console.log('====================================');
+}
+logMessage("Hello, TypeScript!");
+
+// what is void in typescript
+function printMessage():void{
+  console.log('====================================');
+  console.log("This function does not return anything.");
+  console.log('====================================');
+}
+printMessage();
