@@ -1,0 +1,130 @@
+// string
+let name:string="surafel mengist";
+name="surafel";
+console.log("====================================");
+console.log(name);
+console.log("====================================");
+const lang="javascript";
+console.log("====================================");
+console.log(lang);
+console.log("====================================");
+// number
+let age:number=30;
+console.log("====================================");
+console.log(age);
+console.log("====================================");
+// boolean
+let isStudent:boolean=true;
+console.log("====================================");
+console.log(isStudent);
+console.log("====================================");
+
+// array
+let numbers:number[]=[1,2,3,4,5];
+console.log("====================================");
+console.log(numbers);
+console.log("====================================");
+let names:string[]=["surafel","mengist"];
+console.log("====================================");
+console.log(names);
+console.log("====================================");
+
+// tuple
+let person:[string,number]=["surafel",30];
+console.log("====================================");
+console.log(person);
+console.log("====================================");
+
+// enum
+enum Color {
+  Red,
+  Green,
+  Blue
+}
+console.log("====================================");
+console.log(Color.Red);
+console.log(Color.Green);
+console.log(Color.Blue);
+console.log("====================================");
+// any
+let randomValue:any=10;
+randomValue="surafel";
+randomValue=true;
+console.log("====================================");
+console.log(randomValue);
+console.log("====================================");
+// void
+function greet():void{
+  console.log("Hello, World!");
+}
+greet();
+
+// null and undefined
+let nullValue:null=null;
+let undefinedValue:undefined=undefined;
+console.log("====================================");
+console.log(nullValue);
+console.log(undefinedValue);
+console.log("====================================");
+// object
+let personObj:{name:string,age:number}={name:"surafel",age:30};
+console.log("====================================");
+console.log(personObj);
+console.log("====================================");
+// union types
+let unionValue:string|number="surafel";
+console.log("====================================");
+// unionValue=30; // valid
+console.log(unionValue);
+console.log("====================================");
+// intersection types
+interface A {
+  a: string;
+}
+interface B {
+  b: number;
+}
+type AB = A & B;
+let abValue: AB = { a: "hello", b: 42 };
+console.log("====================================");
+console.log(abValue);
+console.log("====================================");
+// type aliases
+type StringOrNumber = string | number;
+let aliasValue: StringOrNumber = "surafel";
+console.log("====================================");
+console.log(aliasValue);
+console.log("====================================");
+aliasValue = 30; // valid
+console.log("====================================");
+console.log(aliasValue);
+console.log("====================================");
+// literal types
+let literalValue:"surafel"|"mengist"="surafel";
+console.log("====================================");
+console.log(literalValue);
+console.log("====================================");
+literalValue="mengist"; // valid
+console.log("====================================");
+console.log(literalValue);
+console.log("====================================");
+// type assertions
+let someValue:any="this is a string";
+let strLength:number=(someValue as string).length;
+// or
+// let strLength:number=(<string>someValue).length;
+console.log("====================================");
+console.log(strLength);
+console.log("====================================");
+// unknown
+let unknownValue:unknown="surafel";
+if(typeof unknownValue==="string"){
+  console.log("====================================");
+  console.log(unknownValue.toUpperCase());
+  console.log("====================================");
+}
+// never
+function throwError(message:string):never{
+  throw new Error(message);
+}
+// throwError("This is an error message."); // Uncommenting this line will throw an error
