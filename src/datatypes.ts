@@ -1,7 +1,7 @@
 // string
 let name:string="surafel mengist";
 name="surafel";
-console.log("====================================");
+console.log("==================================== string");
 console.log(name);
 console.log("====================================");
 const lang="javascript";
@@ -10,20 +10,20 @@ console.log(lang);
 console.log("====================================");
 // number
 let age:number=30;
-console.log("====================================");
+console.log("====================================number");
 console.log(age);
 console.log("====================================");
 // boolean
 let isStudent:boolean=true;
-console.log("====================================");
+console.log("====================================boolean");
 console.log(isStudent);
 console.log("====================================");
 
 // array
 let numbers:number[]=[1,2,3,4,5];
-console.log("====================================");
+console.log("==================================== array of numbers ");
 console.log(numbers);
-console.log("====================================");
+console.log("==================================== array of strings");
 let names:string[]=["surafel","mengist"];
 console.log("====================================");
 console.log(names);
@@ -31,7 +31,7 @@ console.log("====================================");
 
 // tuple
 let person:[string,number]=["surafel",30];
-console.log("====================================");
+console.log("==================================== this is a tuple");
 console.log(person);
 console.log("====================================");
 
@@ -41,7 +41,7 @@ enum Color {
   Green,
   Blue
 }
-console.log("====================================");
+console.log("==================================== this is an enum");
 console.log(Color.Red);
 console.log(Color.Green);
 console.log(Color.Blue);
@@ -50,11 +50,12 @@ console.log("====================================");
 let randomValue:any=10;
 randomValue="surafel";
 randomValue=true;
-console.log("====================================");
+console.log("==================================== this is any type");
 console.log(randomValue);
 console.log("====================================");
 // void
 function greet():void{
+  console.log("==================================== this is a void function");
   console.log("Hello, World!");
 }
 greet();
@@ -62,7 +63,7 @@ greet();
 // null and undefined
 let nullValue:null=null;
 let undefinedValue:undefined=undefined;
-console.log("====================================");
+console.log("==================================== null and undefined");
 console.log(nullValue);
 console.log(undefinedValue);
 console.log("====================================");
@@ -73,7 +74,7 @@ console.log(personObj);
 console.log("====================================");
 // union types
 let unionValue:string|number="surafel";
-console.log("====================================");
+console.log("==================================== this is a union type");
 // unionValue=30; // valid
 console.log(unionValue);
 console.log("====================================");
@@ -86,13 +87,13 @@ interface B {
 }
 type AB = A & B;
 let abValue: AB = { a: "hello", b: 42 };
-console.log("====================================");
+console.log("==================================== this is an intersection type");
 console.log(abValue);
 console.log("====================================");
 // type aliases
 type StringOrNumber = string | number;
 let aliasValue: StringOrNumber = "surafel";
-console.log("====================================");
+console.log("==================================== this is a type alias");
 console.log(aliasValue);
 console.log("====================================");
 aliasValue = 30; // valid
@@ -101,7 +102,7 @@ console.log(aliasValue);
 console.log("====================================");
 // literal types
 let literalValue:"surafel"|"mengist"="surafel";
-console.log("====================================");
+console.log("==================================== this is a literal type");
 console.log(literalValue);
 console.log("====================================");
 literalValue="mengist"; // valid
@@ -111,7 +112,8 @@ console.log("====================================");
 // type assertions
 let someValue:any="this is a string";
 let strLength:number=(someValue as string).length;
-// or
+
+ 
 // let strLength:number=(<string>someValue).length;
 console.log("====================================");
 console.log(strLength);
