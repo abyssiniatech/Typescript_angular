@@ -117,3 +117,16 @@ console.log('====================================');
 
 
 
+function students(name: string, age: number, grade?: string) {
+    if(grade){
+        return `Student Name: ${name}, Age: ${age}, Grade: ${grade}`;
+    }
+    else{
+        return `Student Name: ${name}, Age: ${age}`;
+    }
+}
+console.log("Student Function with Optional Parameter:")
+console.log('====================================');
+console.log(students("Surafel", 25));
+console.log(students("Surafel", 25, "A"));
+console.log('====================================');
