@@ -61,3 +61,15 @@ console.log('====================================');
 console.log(car1);
 car1.move();
 console.log('====================================');
+
+
+// object distructring inntypescript
+const person={
+    name:"Alice",
+    age:30,
+    city:"New York"
+}
+const {name: personName,age: personAge,city: personCity}=person;
+console.log('====================================');
+console.log(`Name: ${personName}, Age: ${personAge}, City: ${personCity}`);
+console.log('====================================');
