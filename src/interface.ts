@@ -86,3 +86,21 @@ const manager1:manager = {
 console.log('====================================');
 console.log(manager1);
 console.log('====================================');
+
+
+
+// multiple inheritance using interfaces
+interface Person {
+  name: string;
+}
+
+interface Worker {
+  salary: number;
+}
+
+interface Employee extends Person, Worker {}
+
+const emp: Employee = {
+  name: "John",
+  salary: 50000
+};
