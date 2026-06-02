@@ -6,7 +6,7 @@ type info={
 const Studernts:info ={
     name:"surafel",
     id:"23d",
-    age:24
+    age:24,
 }
 console.log("==================================== this is an object");
 const results: void = (() => {
@@ -19,3 +19,7 @@ const results: void = (() => {
 const name=(name:string)=>{
     return `Hello, ${name}!`;
 }
+var res=name("welcome ")
+console.log('====================================');
+console.log(name);
+console.log('====================================');
