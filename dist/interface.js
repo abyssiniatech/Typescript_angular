@@ -28,3 +28,30 @@ console.log(myCalculator.subtract(5, 3));
 console.log(myCalculator.multiply(5, 3));
 console.log(myCalculator.divide(5, 3));
 console.log('====================================');
+const userList1 = {
+    users: [user1, user2],
+};
+console.log('====================================');
+console.log(userList1);
+console.log('====================================');
+const admin1 = {
+    id: "3",
+    name: "Admin User",
+    age: 35,
+    email: "admin@example.com",
+    role: "Administrator"
+};
+console.log('====================================');
+console.log(admin1);
+console.log('====================================');
+const manager1 = {
+    id: "4",
+    name: "Manager User",
+    age: 40,
+    email: "manager@example.com",
+    role: "Manager",
+    department: "Engineering"
+};
+console.log('====================================');
+console.log(manager1);
+console.log('====================================');

@@ -42,3 +42,47 @@ console.log(myCalculator.subtract(5,3));
 console.log(myCalculator.multiply(5,3));
 console.log(myCalculator.divide(5,3));
 console.log('====================================');
+// interface for array of objects
+interface userList {
+    users:user[],
+}
+const userList1:userList = {
+    users:[user1,user2],
+}
+console.log('====================================');
+console.log(userList1);
+console.log('====================================');
+
+// Extending Interfaces
+interface admin extends user {
+    role:string,
+}
+const admin1:admin = {
+    id:"3",
+    name:"Admin User",
+    age:35,
+    email:"admin@example.com",
+    role:"Administrator"
+}
+
+console.log('====================================');
+console.log(admin1);
+console.log('====================================');
+
+
+interface manager extends admin {
+    department:string,
+}
+const manager1:manager = {
+    id:"4",
+    name:"Manager User",
+    age:40,
+    email:"manager@example.com",
+    role:"Manager",
+    department:"Engineering"
+}
+
+
+console.log('====================================');
+console.log(manager1);
+console.log('====================================');
