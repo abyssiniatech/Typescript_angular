@@ -154,3 +154,11 @@ function printMessage() {
     console.log('====================================');
 }
 printMessage();
+// generics
+function identity(arg) {
+    return arg;
+}
+const output1 = identity("Hello, Generics!");
+console.log('====================================');
+console.log(output1);
+// intermidate generics
