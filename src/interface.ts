@@ -104,3 +104,22 @@ const emp: Employee = {
   name: "John",
   salary: 50000
 };
+
+// interface with methods
+interface Shape {
+    area:()=>number,
+    perimeter:()=>number,
+}
+class Rectangle implements Shape {
+    constructor(public width:number, public height:number){}
+    area(){
+        return this.width * this.height;
+    }
+    perimeter(){
+        return 2 * (this.width + this.height);
+    }
+}
+const rect = new Rectangle(5,10);
+console.log('====================================');
+console.log(`Area: ${rect.area()} Perimeter: ${rect.perimeter()}`);
+console.log('====================================');
